@@ -1,0 +1,107 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "kd8xjc681e",
+    "contentId": "builtin_single-choice-hrYRsw",
+    "invalidContentId": "",
+    "keywords": {
+      "Kherson Flood Rescue": [
+        "Kherson Flood Rescue"
+      ],
+      "Military PowerBox": [
+        "Military PowerBox"
+      ],
+      "Art therapy for children affected by the war": [
+        "Art therapy for children affected by the war"
+      ],
+      "Додати свою ініціативу": [
+        "Додати свою ініціативу"
+      ],
+      "Повернутись": [
+        "Повернутись"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-kd8xjc681e\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-kd8xjc681e\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-kd8xjc681e\",\"value\": null}",
+        "say #!builtin_single-choice-hrYRsw {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "546069"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"kd8xjc681e\",\"contentId\":\"builtin_single-choice-hrYRsw\",\"invalidContentId\":\"\",\"keywords\":{\"Kherson Flood Rescue\":[\"Kherson Flood Rescue\"],\"Military PowerBox\":[\"Military PowerBox\"],\"Art therapy for children affected by the war\":[\"Art therapy for children affected by the war\"],\"Додати свою ініціативу\":[\"Додати свою ініціативу\"],\"Повернутись\":[\"Повернутись\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-kd8xjc681e'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "063201"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"kd8xjc681e\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-kd8xjc681e']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "792458"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "502799"
+    }
+  ]
+}

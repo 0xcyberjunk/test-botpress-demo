@@ -1,0 +1,104 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "sxfbn6jnj0",
+    "contentId": "builtin_single-choice-kIzINH",
+    "invalidContentId": "",
+    "keywords": {
+      "Донат": [
+        "Донат"
+      ],
+      "Хочу Волонтерити": [
+        "Хочу Волонтерити"
+      ],
+      "Я організація ": [
+        "Я організація "
+      ],
+      "Повернутись": [
+        "Повернутись"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-sxfbn6jnj0\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-sxfbn6jnj0\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-sxfbn6jnj0\",\"value\": null}",
+        "say #!builtin_single-choice-kIzINH {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "708998"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"sxfbn6jnj0\",\"contentId\":\"builtin_single-choice-kIzINH\",\"invalidContentId\":\"\",\"keywords\":{\"Донат\":[\"Донат\"],\"Хочу Волонтерити\":[\"Хочу Волонтерити\"],\"Я організація \":[\"Я організація \"],\"Повернутись\":[\"Повернутись\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-sxfbn6jnj0'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "701692"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"sxfbn6jnj0\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-sxfbn6jnj0']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "755894"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "449567"
+    }
+  ]
+}

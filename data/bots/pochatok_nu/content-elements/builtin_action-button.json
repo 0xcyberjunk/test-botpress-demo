@@ -1,0 +1,13 @@
+[
+  {
+    "id": "builtin_action-button-GSYLdl",
+    "formData": {
+      "action$en": "Open URL",
+      "url$en": "https://send.monobank.ua/jar/2uo6EvLkaT?fbclid=PAAaZUA0p5XDqpHpPsAC5C4Xl5iIb2P8MfaxrkZu0OR-Hvj3L3ItkwgE-zsFM_aem_th_AW4KhGG8DKCgK4W0O7U_r16Jkl8O35UGSxviKv8iqhsR8dOgPxYwB8L9pgPUL1i4PCQ",
+      "title$en": "monobank"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T10:49:35.957Z",
+    "modifiedOn": "2023-06-13T11:02:19.640Z"
+  }
+]

@@ -1,0 +1,1001 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Welcome"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "bf2e791e3b",
+      "name": "Welcome",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-sDnCdF"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-074696",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice",
+      "flow": "skills/choice-074696.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Долучит...]",
+          "condition": "temp['skill-choice-ret-op8vnewnzo'] == \"Долучитися\"",
+          "node": "choice-join"
+        },
+        {
+          "caption": "User picked [Я свій]",
+          "condition": "temp['skill-choice-ret-op8vnewnzo'] == \"Я свій\"",
+          "node": "node-42c6"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-4d343c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-join",
+      "flow": "skills/choice-4d343c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Донат]",
+          "condition": "temp['skill-choice-ret-sxfbn6jnj0'] == \"Донат\"",
+          "node": "choice-donate"
+        },
+        {
+          "caption": "User picked [Хочу Во...]",
+          "condition": "temp['skill-choice-ret-sxfbn6jnj0'] == \"Хочу Волонтерити\"",
+          "node": "AskFullName"
+        },
+        {
+          "caption": "User picked [Я орган...]",
+          "condition": "temp['skill-choice-ret-sxfbn6jnj0'] == \"Я організація \"",
+          "node": "choice-c64487"
+        },
+        {
+          "caption": "User picked [Поверну...]",
+          "condition": "temp['skill-choice-ret-sxfbn6jnj0'] == \"Повернутись\"",
+          "node": "choice"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-ac5670",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-donate",
+      "flow": "skills/choice-ac5670.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Донат о...]",
+          "condition": "temp['skill-choice-ret-1e4j6kbtab'] == \"Донат організації\"",
+          "node": "donate-orgranisation"
+        },
+        {
+          "caption": "User picked [Донат і...]",
+          "condition": "temp['skill-choice-ret-1e4j6kbtab'] == \"Донат ініціативі\"",
+          "node": "donate-initiative"
+        },
+        {
+          "caption": "User picked [Поверну...]",
+          "condition": "temp['skill-choice-ret-1e4j6kbtab'] == \"Повернутись\"",
+          "node": "choice-join"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-55074c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "donate-orgranisation",
+      "flow": "skills/choice-55074c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [ITT.fund]",
+          "condition": "temp['skill-choice-ret-a8n3o2p7kk'] == \"ITT.fund\"",
+          "node": "ittfund"
+        },
+        {
+          "caption": "User picked [NUKRAIN...]",
+          "condition": "temp['skill-choice-ret-a8n3o2p7kk'] == \"NUKRAINE.com\"",
+          "node": "nukraine"
+        },
+        {
+          "caption": "User picked [Поверну...]",
+          "condition": "temp['skill-choice-ret-a8n3o2p7kk'] == \"Повернутися\"",
+          "node": "choice-donate"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-e33f35",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "back",
+      "flow": "skills/choice-e33f35.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Поверну...]",
+          "condition": "temp['skill-choice-ret-zh7j7y6vyj'] == \"Повернутись\"",
+          "node": "donate-orgranisation"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "533f509bb4",
+      "name": "nukraine",
+      "next": [
+        {
+          "condition": "true",
+          "node": "back"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-28FK-P"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "bf069cfdd8",
+      "name": "ittfund",
+      "next": [
+        {
+          "condition": "true",
+          "node": "back"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-7Mj6hq"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-0d3a87",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "donate-initiative",
+      "flow": "skills/choice-0d3a87.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Kherson...]",
+          "condition": "temp['skill-choice-ret-kd8xjc681e'] == \"Kherson Flood Rescue\"",
+          "node": "kherson-flood-rescue"
+        },
+        {
+          "caption": "User picked [Militar...]",
+          "condition": "temp['skill-choice-ret-kd8xjc681e'] == \"Military PowerBox\"",
+          "node": "Military-PowerBox"
+        },
+        {
+          "caption": "User picked [Art the...]",
+          "condition": "temp['skill-choice-ret-kd8xjc681e'] == \"Art therapy for children affected by the war\"",
+          "node": "Mosaika/Art-therapy"
+        },
+        {
+          "caption": "User picked [Додати ...]",
+          "condition": "temp['skill-choice-ret-kd8xjc681e'] == \"Додати свою ініціативу\"",
+          "node": "Make-Initiative"
+        },
+        {
+          "caption": "User picked [Поверну...]",
+          "condition": "temp['skill-choice-ret-kd8xjc681e'] == \"Повернутись\"",
+          "node": "choice-donate"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "54c8a405ed",
+      "name": "kherson-flood-rescue",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Back"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-hu1dhT"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "418e0e1a9a",
+      "name": "Military-PowerBox",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Back"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-B7W5eE"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a220e17b70",
+      "name": "Mosaika/Art-therapy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Back"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-1_CRgO"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "2ddbe9fa1f",
+      "name": "Make-Initiative",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Back"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-199chw"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-e2819d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "Back",
+      "flow": "skills/choice-e2819d.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Поверну...]",
+          "condition": "temp['skill-choice-ret-7qxxkkjdjr'] == \"Повернутись\"",
+          "node": "donate-initiative"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "eb93af15db",
+      "name": "AskFullName",
+      "next": [
+        {
+          "condition": "true",
+          "node": "AskPhoneNumber"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-P9un4I",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"fullname\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "04a55dfe52",
+      "name": "AskPhoneNumber",
+      "next": [
+        {
+          "condition": "true",
+          "node": "AskAge"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-C5Mlun",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"phone\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "145b7f19bd",
+      "name": "AskAge",
+      "next": [
+        {
+          "condition": "true",
+          "node": "AskLocation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-fUzS2W",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"age\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "77fe53f77a",
+      "name": "AskLocation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "AskExperience"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-X3IE2I",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"location\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "9d2c33c19d",
+      "name": "AskExperience",
+      "next": [
+        {
+          "condition": "true",
+          "node": "AskSuperpower"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-TJwbhe",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"experience\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "a2898b9f01",
+      "name": "AskSuperpower",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Referal"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-zylKaZ",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"superpower\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "6e28ee54b4",
+      "name": "AskAdditionalHelp",
+      "next": [
+        {
+          "condition": "true",
+          "node": "AskPhoto"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-CGp1Pq",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"additional_help\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "6c152bc862",
+      "name": "ShowRegistrationData",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ConfirmationUser"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ZOYtle"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "fe86273d82",
+      "name": "Referal",
+      "next": [
+        {
+          "condition": "true",
+          "node": "AskAdditionalHelp"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-rAMf5v",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"referal\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "skill-e98c75",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "ConfirmationUser",
+      "flow": "skills/choice-e98c75.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Так]",
+          "condition": "temp['skill-choice-ret-5ep6j0wbxt'] == \"Так\"",
+          "node": "UserValidation"
+        },
+        {
+          "caption": "User picked [Виправи...]",
+          "condition": "temp['skill-choice-ret-5ep6j0wbxt'] == \"Виправити\"",
+          "node": "Correct"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "653eacb905",
+      "name": "Correct",
+      "next": [
+        {
+          "condition": "true",
+          "node": "UserValidation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5LkTUd",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CorrectData\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "82f5fad7ef",
+      "name": "UserValidation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-join"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-NvYWYy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "3891fd8a2c",
+      "name": "AskPhoto",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ShowRegistrationData"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-f5te6S"
+      ],
+      "onReceive": [
+        "builtin/storeFileLocally {\"user_photo_url\":\"\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-c64487",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-c64487",
+      "flow": "skills/choice-c64487.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Соціаль...]",
+          "condition": "temp['skill-choice-ret-auaaqhd4jc'] == \"Соціально-відповідальний бізнес\"",
+          "node": "CompanyName"
+        },
+        {
+          "caption": "User picked [Благоді...]",
+          "condition": "temp['skill-choice-ret-auaaqhd4jc'] == \"Благодійна організація \"",
+          "node": "CharityName"
+        },
+        {
+          "caption": "User picked [Запит н...]",
+          "condition": "temp['skill-choice-ret-auaaqhd4jc'] == \"Запит на дзвінок\"",
+          "node": "Contact_Info"
+        },
+        {
+          "caption": "User picked [Поверну...]",
+          "condition": "temp['skill-choice-ret-auaaqhd4jc'] == \"Повернутись\"",
+          "node": "choice-join"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "16bfd70bab",
+      "name": "Contact_Info",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-f78cea"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-XvGZSv"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-f78cea",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-f78cea",
+      "flow": "skills/choice-f78cea.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Поверну...]",
+          "condition": "temp['skill-choice-ret-t5hxliierw'] == \"Повернутися \"",
+          "node": "choice-c64487"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "df510c93b3",
+      "name": "CompanyName",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CompanyContact"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3rNL7x",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyName\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "3afdadf53c",
+      "name": "CompanyContact",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CompanyLocation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-LQadNb",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyContact\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "4e0c6cb911",
+      "name": "CompanyLocation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CompanyResource"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-TPvEKJ",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyLocation\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "6c0588ef24",
+      "name": "CompanyResource",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CompanyCollab"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-iXynd3",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyResource\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "348681beb6",
+      "name": "CompanyCollab",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CompanyReferal"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-d5s79c",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyCollab\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "ae3b463365",
+      "name": "CompanyDocument",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ShowCompanyRegistrationData"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-OF1HXs",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyDocument\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "6c66780006",
+      "name": "CompanyFocus",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CompanyDocument"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-SVHNt_",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyFocus\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "642c621345",
+      "name": "CompanyReferal",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CompanyFocus"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-rAMf5v",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyReferal\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "a08fbe6862",
+      "name": "ShowCompanyRegistrationData",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ConfirmationCompany"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-vn-_BA"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-e3e6f6",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "ConfirmationCompany",
+      "flow": "skills/choice-e3e6f6.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Так]",
+          "condition": "temp['skill-choice-ret-r44ekzo9hh'] == \"Так\"",
+          "node": "CompanyValidation"
+        },
+        {
+          "caption": "User picked [Виправи...]",
+          "condition": "temp['skill-choice-ret-r44ekzo9hh'] == \"Виправити\"",
+          "node": "CorrectCompany"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "dc883f6afe",
+      "name": "CorrectCompany",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CompanyValidation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5LkTUd",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CompanyCorrectData\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "ab22e51ad1",
+      "name": "CompanyValidation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-c64487"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-NvYWYy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "893eb1bef5",
+      "name": "ShowCharityRegistrationData",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ConfirmationCharity"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-vn-_BA"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "81be34018a",
+      "name": "CharityName",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CharityContact"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3rNL7x",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityName\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "d888a9ec72",
+      "name": "CharityContact",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CharityLocation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-LQadNb",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityContact\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "aa06d1d17a",
+      "name": "CharityLocation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CharityResource"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-TPvEKJ",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityLocation\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "ec8b267ee1",
+      "name": "CharityResource",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CharityCollab"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-iXynd3",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityResource\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "859db4bb08",
+      "name": "CharityCollab",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CharityReferal"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-d5s79c",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityCollab\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "07d2e96247",
+      "name": "CharityReferal",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CharityFocus"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-rAMf5v",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityReferal\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "cad0b50f53",
+      "name": "CharityFocus",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CharityDocument"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-SVHNt_",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityFocus\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "270461f7e1",
+      "name": "CharityDocument",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ShowCharityRegistrationData"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-OF1HXs",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityDocument\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "skill-34dbbb",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "ConfirmationCharity",
+      "flow": "skills/choice-34dbbb.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Так]",
+          "condition": "temp['skill-choice-ret-sY4FersnXt'] == \"Так\"",
+          "node": "CharityValidation"
+        },
+        {
+          "caption": "User picked [Виправи...]",
+          "condition": "temp['skill-choice-ret-sY4FersnXt'] == \"Виправити\"",
+          "node": "CorrectCharity"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "4862421f28",
+      "name": "CorrectCharity",
+      "next": [
+        {
+          "condition": "true",
+          "node": "CharityValidation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5LkTUd",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"CharityCorrectData\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "03dca37908",
+      "name": "CharityValidation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-c64487"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-NvYWYy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f88b3c213e",
+      "name": "node-18d6",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-NODjx7"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "92372b6140",
+      "name": "node-42c6",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "raw",
+          "node": "node-18d6"
+        },
+        {
+          "condition": "false",
+          "conditionType": "raw",
+          "node": "choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lzl2Um",
+        "CheckRegistration {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

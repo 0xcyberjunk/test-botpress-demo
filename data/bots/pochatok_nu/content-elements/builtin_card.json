@@ -1,0 +1,183 @@
+[
+  {
+    "id": "builtin_card-7Mj6hq",
+    "formData": {
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "text": "{{",
+          "url": "https://send.monobank.ua/jar/2uo6EvLkaT?fbclid=PAAaZUA0p5XDqpHpPsAC5C4Xl5iIb2P8MfaxrkZu0OR-Hvj3L3ItkwgE-zsFM_aem_th_AW4KhGG8DKCgK4W0O7U_r16Jkl8O35UGSxviKv8iqhsR8dOgPxYwB8L9pgPUL1i4PCQ",
+          "title": "Monobank"
+        },
+        {
+          "action": "Open URL",
+          "url": "https://pay.fondy.eu/merchants/b8dc9dda726a34b6378ad390dfad8b9a2529f908/default/index.html?button=bd84c4ea6befebd05ff39568856fc1744b4debb3",
+          "title": "ApplePay/GooglePay"
+        },
+        {
+          "action": "Open URL",
+          "text": "https://itt.fund/cryptodonate/",
+          "url": "https://itt.fund/cryptodonate/",
+          "title": "Crypto"
+        },
+        {
+          "action": "Open URL",
+          "url": "https://instagram.com/ittfund?igshid=MzRlODBiNWFlZA==",
+          "title": "Instagram"
+        }
+      ],
+      "title$en": "ITT.fund",
+      "subtitle$en": "itt.fund",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/pi8i59one7nyfqc2dxzz-itt_userpic2.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T11:07:59.755Z",
+    "modifiedOn": "2023-06-13T11:21:28.485Z"
+  },
+  {
+    "id": "builtin_card-28FK-P",
+    "formData": {
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "Monobank",
+          "url": "http://send.monobank.ua/jar/2uo6EvLkaT"
+        },
+        {
+          "action": "Open URL",
+          "title": "nukraine",
+          "url": "https://www.nukraine.com/"
+        },
+        {
+          "action": "Open URL",
+          "title": "initiatives",
+          "url": "https://www.nukraine.com/initiatives"
+        }
+      ],
+      "title$en": "nukraine",
+      "subtitle$en": "nukraine",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/re5kwgo6zriiwcb0g0pl-madeleine-ragsdale-GqqFY3YymBY-unsplash---Copy1.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T11:29:14.819Z",
+    "modifiedOn": "2023-06-13T11:30:16.787Z"
+  },
+  {
+    "id": "builtin_card-hu1dhT",
+    "formData": {
+      "title$en": "Допомога постраждалим від підриву дамби",
+      "subtitle$en": "Надання негайної допомоги постраждалим від повеней в Херсонській області.",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/jgqaqii5lkvpif72yzr3-648032a87c9b87637d8f64d8_AP23157502199747-p-1080.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "Міссія Херсон",
+          "url": "https://www.nukraine.com/initiatives/kherson-flood-rescue"
+        },
+        {
+          "action": "Open URL",
+          "title": "Monobank",
+          "url": "https://send.monobank.ua/jar/8XVDW1qhfD"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T11:47:53.178Z",
+    "modifiedOn": "2023-06-13T11:56:21.632Z"
+  },
+  {
+    "id": "builtin_card-B7W5eE",
+    "formData": {
+      "title$en": "Вітамінно-енергетичний комплекс для військових PowerBox",
+      "subtitle$en": "Підтримка здоровʼя, пришвидшення відновлення та покращення ефективності військових.",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/msc8pxaw1w070lyv7muh-64736312944b04bd3bb491c7_1.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "веб-сторінка",
+          "url": "https://www.nukraine.com/initiatives/powerbox"
+        },
+        {
+          "action": "Open URL",
+          "text": "http://send.monobank.ua/jar/2uo6EvLkaT",
+          "url": "http://send.monobank.ua/jar/2uo6EvLkaT",
+          "title": "Monobank"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T11:55:20.459Z",
+    "modifiedOn": "2023-06-13T11:55:20.459Z"
+  },
+  {
+    "id": "builtin_card-1_CRgO",
+    "formData": {
+      "title$en": "Mosaika = Арт-терапія для дітей та підлітків",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "text": "https://www.nukraine.com/initiatives/art-therapy",
+          "title": "Mosaika",
+          "url": "https://www.nukraine.com/initiatives/art-therapy"
+        },
+        {
+          "action": "Open URL",
+          "text": "https://instagram.com/mosaika.project?igshid=MzRlODBiNWFlZA==",
+          "title": "Instagram",
+          "url": "https://instagram.com/mosaika.project?igshid=MzRlODBiNWFlZA=="
+        },
+        {
+          "action": "Open URL",
+          "title": "Monobank",
+          "url": "https://send.monobank.ua/jar/2uo6EvLkaT"
+        }
+      ],
+      "subtitle$en": "Арт терапія для дітей і підлітків з наслідками ПТСР з регіонів постраждалих від окупаціі і наслідків війни.",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/6e08d0nd7zh9oxbia1sy-644237733c98c9fdb1811f1f_Art-therapy-p-1080.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T12:00:06.281Z",
+    "modifiedOn": "2023-06-13T12:00:06.281Z"
+  },
+  {
+    "id": "builtin_card-199chw",
+    "formData": {
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://initiatives.nukraine.com/",
+          "title": "веб-сторінка"
+        }
+      ],
+      "title$en": "Створить свою ініціативу",
+      "subtitle$en": "Заповніть Форму і створить свою ініціативу на платформі nukraine",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/z55i1yncg9fgnh0ug43v-photo_2023-04-21_14-39-15.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T12:07:10.019Z",
+    "modifiedOn": "2023-06-13T12:07:10.019Z"
+  },
+  {
+    "id": "builtin_card-XvGZSv",
+    "formData": {
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/inxwejls0rr0p15g4h1v-dc7eb618b6651bbae2c82a9a87cb0f4c.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://www.nukraine.com/",
+          "title": "Веб-сторінка"
+        },
+        {
+          "action": "Say something",
+          "text": "hello@nukraine.com",
+          "title": "Єлектронна адресса "
+        }
+      ],
+      "title$en": "Залиште ваш контакт та ми з вами звяжемось ",
+      "subtitle$en": "Очікуемо вас"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T16:09:56.691Z",
+    "modifiedOn": "2023-06-13T16:09:56.691Z"
+  }
+]

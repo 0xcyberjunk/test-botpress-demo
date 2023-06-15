@@ -1,0 +1,325 @@
+[
+  {
+    "id": "builtin_text-sDnCdF",
+    "formData": {
+      "text$en": "Привіт, я бот для того та того",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T09:31:39.172Z",
+    "modifiedOn": "2023-06-13T09:31:39.172Z"
+  },
+  {
+    "id": "builtin_text-b4Gz8c",
+    "formData": {
+      "text$en": "Долучитися ",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T10:02:16.995Z",
+    "modifiedOn": "2023-06-13T10:02:16.995Z"
+  },
+  {
+    "id": "builtin_text-liapqC",
+    "formData": {
+      "text$en": "ITT.fund \nОпис організації:\nДонат - https://send.monobank.ua/jar/2uo6EvLkaT?fbclid=PAAaZUA0p5XDqpHpPsAC5C4Xl5iIb2P8MfaxrkZu0OR-Hvj3L3ItkwgE-zsFM_aem_th_AW4KhGG8DKCgK4W0O7U_r16Jkl8O35UGSxviKv8iqhsR8dOgPxYwB8L9pgPUL1i4PCQ\n\n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T10:36:13.151Z",
+    "modifiedOn": "2023-06-13T10:36:13.151Z"
+  },
+  {
+    "id": "builtin_text-Nc4ZHq",
+    "formData": {
+      "text$en": "nukraine.com\nОпис органзіцаіЇ:\nДонат - https://send.monobank.ua/jar/2uo6EvLkaT?fbclid=PAAaYSrtQ19xQZ3pZsahr_H3SxWkeUy5E3wN1gAVx9mqpGCWo7JM70DpIG_7Y_aem_th_AW5ylerZ_xAzan12NBBS1-SwLEjyfrWJ-AiufX4owTnRBW1oOIHAWkaID0ZLLvk20Rg",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T10:37:49.618Z",
+    "modifiedOn": "2023-06-13T11:09:11.057Z"
+  },
+  {
+    "id": "builtin_text-2_2J_X",
+    "formData": {
+      "text$en": "monobank",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T10:52:45.386Z",
+    "modifiedOn": "2023-06-13T10:52:48.248Z"
+  },
+  {
+    "id": "builtin_text-P9un4I",
+    "formData": {
+      "text$en": "Як ваше повне имя?",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T13:00:26.707Z",
+    "modifiedOn": "2023-06-13T13:00:26.707Z"
+  },
+  {
+    "id": "builtin_text-C5Mlun",
+    "formData": {
+      "text$en": "Номер телефону?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T13:15:22.861Z",
+    "modifiedOn": "2023-06-13T13:15:22.861Z"
+  },
+  {
+    "id": "builtin_text-fUzS2W",
+    "formData": {
+      "text$en": "Скільки Вам років?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T13:17:15.424Z",
+    "modifiedOn": "2023-06-13T13:17:15.424Z"
+  },
+  {
+    "id": "builtin_text-X3IE2I",
+    "formData": {
+      "text$en": "Місце проживання або Бажані регіони для волонтерства?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T13:18:09.042Z",
+    "modifiedOn": "2023-06-13T13:18:09.042Z"
+  },
+  {
+    "id": "builtin_text-TJwbhe",
+    "formData": {
+      "text$en": "Який ваш досвід у волонтерстві?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T13:20:37.990Z",
+    "modifiedOn": "2023-06-13T13:20:37.990Z"
+  },
+  {
+    "id": "builtin_text-zylKaZ",
+    "formData": {
+      "text$en": "У чому ваша суперсила? Опишить чим ви можете бути корисні",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T13:22:01.000Z",
+    "modifiedOn": "2023-06-13T13:22:01.000Z"
+  },
+  {
+    "id": "builtin_text-CGp1Pq",
+    "formData": {
+      "text$en": "Це останне питання, що ще ви можете(приклад: \"маю тачку, маю команду, вмію робити дизайн, менеджмет, javascript, тощо \") ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T13:28:48.715Z",
+    "modifiedOn": "2023-06-13T13:28:48.715Z"
+  },
+  {
+    "id": "builtin_text-ZOYtle",
+    "formData": {
+      "text$en": "Дякую за реєстрацію! Ось ваші дані:\n\n\nПовне ім'я: {{user.fullname}}\n\nНомер телефону: {{user.phone}}\n\nВік: {{user.age}}\n\nЛокація: {{user.location}}\n\nДосвід у волонтерстві: {{user.experience}}\n\nСуперсила: {{user.superpower}}\n\nДодатково: {{user.additional_help}}\n\n\nВсе вірно?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T14:25:42.399Z",
+    "modifiedOn": "2023-06-13T17:43:15.866Z"
+  },
+  {
+    "id": "builtin_text-rAMf5v",
+    "formData": {
+      "text$en": "Чи маете ви реферальний код? Ми дбаемо про спільноту і полегшуемо валідацію тим користувачам за яких поручився існуючий довіренна особа",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T14:32:29.290Z",
+    "modifiedOn": "2023-06-13T19:22:27.310Z"
+  },
+  {
+    "id": "builtin_text-5LkTUd",
+    "formData": {
+      "text$en": "Напишить у довольній формі що виправити та штучний інтелект це зробе",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T14:44:24.172Z",
+    "modifiedOn": "2023-06-13T14:44:24.172Z"
+  },
+  {
+    "id": "builtin_text-f5te6S",
+    "formData": {
+      "text$en": "Завантажте своє фото",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T15:02:19.345Z",
+    "modifiedOn": "2023-06-13T15:02:19.345Z"
+  },
+  {
+    "id": "builtin_text-NvYWYy",
+    "formData": {
+      "text$en": "Дякую вам за вашу ініциативу, очікуйте повідомлення о валідації.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T15:35:12.196Z",
+    "modifiedOn": "2023-06-13T15:35:12.196Z"
+  },
+  {
+    "id": "builtin_text-W6EGMz",
+    "formData": {
+      "text$en": "Бляха біда, не хвилюйтеся волонтери вже побігли виправляти",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T15:55:07.408Z",
+    "modifiedOn": "2023-06-13T15:55:07.408Z"
+  },
+  {
+    "id": "builtin_text-3rNL7x",
+    "formData": {
+      "text$en": "Вкажіть назву вашої Благодійної організації",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T16:21:25.132Z",
+    "modifiedOn": "2023-06-13T19:19:56.910Z"
+  },
+  {
+    "id": "builtin_text-LQadNb",
+    "formData": {
+      "text$en": "Вкажіть контактну особу організації",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T16:24:34.328Z",
+    "modifiedOn": "2023-06-13T19:20:30.366Z"
+  },
+  {
+    "id": "builtin_text-TPvEKJ",
+    "formData": {
+      "text$en": "В яких локаціях ви хотіли би реалізувати свою соціальну місію?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T16:26:11.933Z",
+    "modifiedOn": "2023-06-13T19:20:56.870Z"
+  },
+  {
+    "id": "builtin_text-iXynd3",
+    "formData": {
+      "text$en": "Як ваша організація може допомогти?(Гроші, примішення, послуги[онлайн/офлайн], логістика, знижки, нетворкінг тощо)",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T16:30:33.714Z",
+    "modifiedOn": "2023-06-13T19:21:37.694Z"
+  },
+  {
+    "id": "builtin_text-d5s79c",
+    "formData": {
+      "text$en": "Можливо ви маєте бізнеси, компанії або волонтерів з якими ви співрацюєте або бажаете співрацювати використовуючи нашу платформу?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T16:40:58.146Z",
+    "modifiedOn": "2023-06-13T19:22:02.983Z"
+  },
+  {
+    "id": "builtin_text-OF1HXs",
+    "formData": {
+      "text$en": "Для повноії веріфікації та безпечної співпраці ми просими вас надіслати скани своїх установчих документів на електронну адресу verify@nukraine.com \n\nМи особисто перевіряемо кожного користувача на цьому етапі",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T17:10:49.900Z",
+    "modifiedOn": "2023-06-13T17:10:49.900Z"
+  },
+  {
+    "id": "builtin_text-SVHNt_",
+    "formData": {
+      "text$en": "Назвіть бажані або існуючи  напрямки соціальної міссії вашої благодійної організації",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T17:17:33.795Z",
+    "modifiedOn": "2023-06-13T19:23:08.053Z"
+  },
+  {
+    "id": "builtin_text-vn-_BA",
+    "formData": {
+      "text$en": "Дякую за реєстрацію! Ось ваші дані:\n\n\nІм'я компанії : {{user.CharityName}}\n\nКонтакти компанії : {{user.CharityContact}}\n\nЛокація Компанії: {{user.CharityLocation}}\n\nРесурс компанії: {{user.CharityResource}}\n\nКолаборація компанії: {{user.CharityCollab}}\n\nРеферал компанії: {{user.CharityReferal}}\n\nФокус Компанії: {{user.CharityFocus}}\n\n\nВсе вірно?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T17:31:02.963Z",
+    "modifiedOn": "2023-06-13T19:25:59.194Z"
+  },
+  {
+    "id": "builtin_text-AILvpv",
+    "formData": {
+      "text$en": "Пройдемо коротку реестрацію ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-13T18:02:01.560Z",
+    "modifiedOn": "2023-06-13T18:02:01.560Z"
+  },
+  {
+    "id": "builtin_text-lzl2Um",
+    "formData": {
+      "text$en": "Доброго дня, провіремо вашу реестрацію",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-14T12:37:23.687Z",
+    "modifiedOn": "2023-06-14T12:37:23.687Z"
+  },
+  {
+    "id": "builtin_text-NODjx7",
+    "formData": {
+      "text$en": "Ви свій",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-06-14T12:44:03.166Z",
+    "modifiedOn": "2023-06-14T12:44:03.166Z"
+  }
+]

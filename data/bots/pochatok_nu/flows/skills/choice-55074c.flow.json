@@ -1,0 +1,101 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "a8n3o2p7kk",
+    "contentId": "builtin_single-choice-oFfsRo",
+    "invalidContentId": "",
+    "keywords": {
+      "ITT.fund": [
+        "ITT.fund"
+      ],
+      "NUKRAINE.com": [
+        "NUKRAINE.com"
+      ],
+      "Повернутися": [
+        "Повернутися"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-a8n3o2p7kk\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-a8n3o2p7kk\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-a8n3o2p7kk\",\"value\": null}",
+        "say #!builtin_single-choice-oFfsRo {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "400289"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"a8n3o2p7kk\",\"contentId\":\"builtin_single-choice-oFfsRo\",\"invalidContentId\":\"\",\"keywords\":{\"ITT.fund\":[\"ITT.fund\"],\"NUKRAINE.com\":[\"NUKRAINE.com\"],\"Повернутися\":[\"Повернутися\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-a8n3o2p7kk'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "214353"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"a8n3o2p7kk\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-a8n3o2p7kk']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "718457"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "340647"
+    }
+  ]
+}
